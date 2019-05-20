@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Now Playing @ DN HQ</string>
+    <string name="appwidget_header">OFFICE LISTENING TO…</string>
+    <string name="appwidget_artist">Maxwell</string>
+    <string name="appwidget_song">Ascension (Never…</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_notification_channel_id">now_playing_channel</string>
+    <string name="less_stars"><![CDATA[Less Stars! <]]></string>
+    <string name="more_stars"><![CDATA[> More Stars!]]></string>
+    <string name="and"><![CDATA[&]]></string>
+    <string name="subscriber"> - 10 Awards received</string>
+
+    <string name="username">
+      <![CDATA[
+        <b>%1$s</b>
+    ]]>
+    </string>
+
+
+</resources>

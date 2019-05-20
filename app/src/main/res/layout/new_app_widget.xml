@@ -1,0 +1,105 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/widget_margin">
+
+    <ImageView
+        android:id="@+id/bgImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <!--Note: There are only a few View classes that you can use in an app widget.
+    ConstraintLayout is not among them.-->
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/widget_margin">
+
+        <ImageView
+            android:id="@+id/currentTrackImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/record_player" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/black"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/headerImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/appwidget_header" />
+
+            <ImageView
+                android:id="@+id/artistImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:contentDescription="@string/appwidget_header" />
+
+            <ImageView
+                android:id="@+id/songImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:contentDescription="@string/appwidget_header" />
+
+            <!--     <TextView
+                     android:id="@+id/header_text"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:contentDescription="@string/appwidget_header"
+                     android:fontFamily="@font/font_res_a_love_of_thunder"
+                     android:text="@string/appwidget_header"
+                     android:textColor="#ffffff"
+                     android:textSize="12sp" />
+
+                 <TextView
+                     android:id="@+id/artist_text"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_marginTop="4dp"
+                     android:contentDescription="@string/appwidget_artist"
+                     android:fontFamily="@font/font_res_courier_new"
+                     android:text="@string/appwidget_artist"
+                     android:textColor="#ffffff"
+                     android:textSize="12sp" />
+
+                 <TextView
+                     android:id="@+id/song_name_text"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_marginTop="4dp"
+                     android:contentDescription="@string/appwidget_song"
+                     android:fontFamily="@font/font_res_courier_new"
+                     android:text="@string/appwidget_song"
+                     android:textColor="#ffffff"
+                     android:textSize="12sp" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

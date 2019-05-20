@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginBottom="8dp">
+
+         <TextView
+             android:id="@+id/giverTv"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="8dp"
+             android:layout_marginLeft="8dp"
+             android:layout_marginRight="8dp"
+             android:layout_marginStart="8dp"
+             android:textSize="14dp"
+             android:textColor="@android:color/black"
+             app:fontFamily="@font/font_res_courier_new"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             tools:text="david" />
+
+         <TextView
+             android:id="@+id/givesLabel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="8dp"
+             android:layout_marginLeft="8dp"
+             android:layout_marginRight="8dp"
+             android:layout_marginStart="8dp"
+             android:textSize="14dp"
+             android:text="gives"
+             android:textColor="@android:color/black"
+             app:fontFamily="@font/font_res_courier_new"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/giverTv" />
+
+         <TextView
+             android:id="@+id/receiverTv"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:gravity="center"
+             android:textSize="14dp"
+             android:textColor="@android:color/black"
+             app:fontFamily="@font/font_res_courier_new"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/givesLabel"
+             tools:text="troy" />
+
+         <androidx.constraintlayout.widget.ConstraintLayout
+             android:id="@+id/starsAwardedContainer"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/receiverTv">
+
+             <TextView
+                 android:id="@+id/starsAwardedTv"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="4dp"
+                 android:textSize="14dp"
+                 android:layout_marginTop="4dp"
+                 android:textColor="@android:color/black"
+                 app:fontFamily="@font/font_res_courier_new"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintEnd_toStartOf="@+id/starImageView"
+                 app:layout_constraintTop_toTopOf="parent"
+                 tools:text="5" />
+
+             <ImageView
+                 android:id="@+id/starImageView"
+                 android:layout_width="20dp"
+                 android:layout_height="0dp"
+                 android:layout_marginBottom="6dp"
+                 android:layout_marginEnd="2dp"
+                 android:layout_marginRight="2dp"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintDimensionRatio="1:1"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintTop_toTopOf="parent"
+                 app:srcCompat="@drawable/ic_star_24dp" />
+
+         </androidx.constraintlayout.widget.ConstraintLayout>
+
+         <TextView
+             android:id="@+id/becauseLabel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="8dp"
+             android:layout_marginLeft="8dp"
+             android:layout_marginRight="8dp"
+             android:layout_marginStart="8dp"
+             android:text="because"
+             android:textSize="14dp"
+             android:textColor="@android:color/black"
+             app:fontFamily="@font/font_res_courier_new"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/starsAwardedContainer" />
+
+         <TextView
+             android:id="@+id/reasonTv"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="8dp"
+             android:layout_marginLeft="8dp"
+             android:layout_marginRight="8dp"
+             android:layout_marginStart="8dp"
+             android:textColor="@android:color/black"
+             android:textSize="14dp"
+             android:textStyle="italic"
+             app:fontFamily="@font/font_res_courier_new"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/becauseLabel"
+             tools:text="Yes" />
+
+         <View
+             android:id="@+id/line"
+             android:layout_width="match_parent"
+             android:layout_marginTop="8dp"
+             android:layout_height="1dp"
+             android:background="@android:color/black"
+             app:layout_constraintTop_toBottomOf="@+id/reasonTv"/>
+
+     </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
